@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Calculadora con JS</title>
+</head>
+<body>
+    <h1>Hola Calculadora JS</h1>
+    <table>
+        <tr>
+            <td colspan="4"><button id="result"></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="add(1);" class="uno">1</button></td>
+            <td><button onclick="add(2);" class="dos">2</button></td>
+            <td><button onclick="add(3);" class="tres">3</button></td>
+            <td><button onclick="add('+');" class="suma">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="add(4);" class="cuatro">4</button></td>
+            <td><button onclick="add(5);" class="cinco">5</button></td>
+            <td><button onclick="add(6);" class="seis">6</button></td>
+            <td><button onclick="add(`-`);" class="menos">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="add(7);" class="siete">7</button></td>
+            <td><button onclick="add(8);" class="ocho">8</button></td>
+            <td><button onclick="add(9);" class="nueve">9</button></td>
+            <td><button onclick="add(`*`);" class="multiplicar">*</button></td>
+        </tr>
+        <tr>
+            <td colspan="3" onclick="add(0);" class="cero"><button>0</button></td>
+            <td><button onclick="add(`/`);" class="dividir">/</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button class="ac" onclick="del()">AC</button></td>
+            <td> <button>.</button></td>
+            <td><button onclick="calc()">=</button></td>            
+          </tr>
+    </table>
+</body>
+<script src="js/index.js"></script>
+</html>
